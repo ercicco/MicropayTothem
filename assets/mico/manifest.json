@@ -1,0 +1,56 @@
+{
+  "source": "mico_sheet.png",
+  "display_target": "800x1280",
+  "assets": {
+    "mico_idle": {
+      "file": "mico_idle.png",
+      "width": 306,
+      "height": 357
+    },
+    "mico_greeting": {
+      "file": "mico_greeting.png",
+      "width": 307,
+      "height": 361
+    },
+    "mico_listening": {
+      "file": "mico_listening.png",
+      "width": 307,
+      "height": 342
+    },
+    "mico_thinking": {
+      "file": "mico_thinking.png",
+      "width": 307,
+      "height": 381
+    },
+    "mico_happy": {
+      "file": "mico_happy.png",
+      "width": 295,
+      "height": 406
+    },
+    "mico_error": {
+      "file": "mico_error.png",
+      "width": 291,
+      "height": 417
+    },
+    "mico_payment_received": {
+      "file": "mico_payment_received.png",
+      "width": 299,
+      "height": 430
+    },
+    "mico_scan_here": {
+      "file": "mico_scan_here.png",
+      "width": 307,
+      "height": 422
+    },
+    "mico_thanks": {
+      "file": "mico_thanks.png",
+      "width": 307,
+      "height": 430
+    },
+    "mico_goodbye": {
+      "file": "mico_goodbye.png",
+      "width": 298,
+      "height": 411
+    }
+  }
+}
