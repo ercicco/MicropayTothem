@@ -1,0 +1,145 @@
+MICROPAY TOTEM - MICO STATES
+============================
+
+Objetivo
+--------
+Mico es una capa visual independiente de la lógica funcional del tótem.
+
+La aplicación nunca debe depender de una imagen, animación o archivo concreto.
+La aplicación solamente solicita un ESTADO de Mico.
+
+Esto permite reemplazar completamente la mascota en el futuro sin modificar:
+- navegación
+- pagos
+- selección de productos
+- conectividad
+- vending
+- Mercado Pago
+- backend
+- lógica de negocio
+
+
+ESTADOS INICIALES
+=================
+
+IDLE
+----
+Estado por defecto cuando el tótem está esperando interacción.
+
+Uso:
+- pantalla inicial
+- espera de usuario
+- regreso después de una operación
+
+Comportamiento visual sugerido:
+- parpadeo
+- movimiento muy suave
+- expresión amigable
+
+
+GREETING
+--------
+Mico saluda al usuario.
+
+Uso:
+- después de tocar la pantalla
+- al comenzar una nueva sesión
+
+Comportamiento visual sugerido:
+- sonrisa
+- saludo con una mano
+- pequeña animación de entrada
+
+
+LISTENING
+---------
+Mico está escuchando al usuario.
+
+Uso futuro:
+- reconocimiento de voz
+- interacción con micrófono
+
+Comportamiento visual sugerido:
+- ojos atentos
+- indicador de audio
+- movimiento sutil
+
+
+THINKING
+--------
+El sistema está procesando información.
+
+Uso:
+- consulta a IA
+- búsqueda de producto
+- comunicación con backend
+- procesamiento previo a una respuesta
+
+Comportamiento visual sugerido:
+- mirada pensativa
+- animación de espera
+- puntos o indicador visual
+
+
+HAPPY
+-----
+Una acción terminó correctamente.
+
+Uso:
+- pago aprobado
+- producto liberado
+- operación completada
+
+Comportamiento visual sugerido:
+- sonrisa
+- celebración breve
+- gesto positivo
+
+
+ERROR
+-----
+Existe un problema recuperable.
+
+Uso:
+- fallo de conexión
+- pago rechazado
+- producto no disponible
+- error de activación
+
+Comportamiento visual sugerido:
+- expresión preocupada pero amigable
+- nunca agresiva
+- mensaje claro de qué hacer
+
+
+REGLA PRINCIPAL
+===============
+
+La lógica funcional nunca debe indicar:
+
+"mostrar imagen happy_03.png"
+
+Debe indicar únicamente:
+
+"Mico -> HAPPY"
+
+El módulo visual decide cómo representar ese estado.
+
+
+EVOLUCIÓN FUTURA
+================
+
+Versión 1:
+- una imagen por estado
+
+Versión 2:
+- múltiples frames por estado
+
+Versión 3:
+- animaciones completas
+
+Versión 4:
+- sincronización con voz y expresiones
+
+Versión 5:
+- posible cambio total de mascota sin alterar la lógica funcional
